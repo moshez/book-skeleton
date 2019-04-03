@@ -9,7 +9,7 @@ subprocess.check_call(['tox', '-e', 'tex', '-e', 'book', '-e', 'html'])
 if os.path.exists(zipname):
     os.remove(zipname)
 with zipfile.ZipFile(zipname, 'w') as zipf:
-    zipf.write('build/tox/html/tmp/book.epub', 'from-python-import-better.epub')
+    zipf.write('build/tox/html/tmp/html/frompythonimportbetter.epub', 'from-python-import-better.epub')
     zipf.write('build/tox/tex/tmp/tex/frompythonimportbetter.pdf',
                'from-python-import-better.pdf')
     html = 'build/tox/book/tmp/html'
