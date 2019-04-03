@@ -1,0 +1,4 @@
+Generators
+==========
+
+They generate stuff.
